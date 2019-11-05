@@ -1,0 +1,179 @@
+* {
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+    font-weight: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../assets/low-poly-polygonal-textures-by-Lumberjacks/8.png");
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+    overflow-x: hidden;
+}
+
+.icon {
+    margin: 0 0;
+    margin: 10px 15px;
+    max-height: 60px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+li:hover {
+    color: black !important;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: ease 1s;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 20px 20px;
+    top: 40px;
+    font-size: 42px;
+}
+
+h2 {
+    display: block !important;
+    letter-spacing: 0.1em;
+    font-size: 50px;
+    font-style: normal;
+}
+
+h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    color: #FFADAD;
+}
+
+li:nth-child(1), .red {
+    display: inline;
+    color: #FF7373;
+}
+
+li:nth-child(2), .yellow {
+    color: #DAE369;
+}
+
+li:nth-child(3), .green {
+    color: #99FF88;
+}
+
+li:nth-child(4), .blue {
+    color: #69DCF5;
+}
+
+li:nth-child(5), .purple {
+    color: #ECB7FF;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.bannertext, ul, li {
+    position: relative;
+    display: inline;
+}
+
+.bannertext {
+    font-size: 65px;
+    line-height: 70px;
+    height: 100px;
+    letter-spacing: 0.03em;
+    left: 15px;
+    top: 50px;
+}
+
+.bannerwrapper {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.fadebannerimg {
+    background-color: black;
+}
+
+.fadebannerimg, .bannerimg {
+    top: 0;
+    width: 100vw;
+    height: 215px;
+    position: absolute;
+}
+
+.bannerimg {
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+footer {
+    margin-top: 20px;
+    min-height: 100px;
+    padding: 20px 20px;
+    font-style: oblique;
+    padding-left: 7vw;
+}
+
+footer, .box, li {
+    background-color: rgb(0, 0, 0, 0.5)
+}
+
+.box {
+    width: auto;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    min-height: 100px;
+    position: relative;
+    padding: 100px 50px;
+}
+
+.box:nth-child(1) {
+    margin-top: 270px;
+}
+
+/* #iden{
+    background-image: url("");
+} */
+
+.colwrap {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    margin-top: 3vh;
+    margin-right: 10vw;
+    column-span: 1;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+}
+
+#datecol, #datecol2 {
+    text-align: right;
+    min-width: 200px;
+}

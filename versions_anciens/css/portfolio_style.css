@@ -1,0 +1,106 @@
+*{
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-image: url("../assets/low-poly-polygonal-textures-by-Lumberjacks/1.png");
+    background-attachment: fixed;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* navbar */
+
+.icon {
+    float: right;
+    margin: 0 0;
+    margin: 10px 15px;
+    max-height: 30px;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+li:hover, .icon:hover {
+    cursor: pointer;
+}
+
+li {
+    padding: 15px 40px;
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    font-size: 15px;
+}
+
+li:hover {
+    color: rgba(240, 19, 77, 0.8);
+    background-color: white;
+    transition: ease 1s;
+    font-style: oblique;
+}
+
+.bannerwrapper, li {
+    max-height: 48px;
+    max-width: 99.5vw;
+}
+
+.bannerwrapper, li, ul {
+    margin: 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ul{
+    padding: 0 0;
+}
+
+.bannerwrapper {
+    top: 0;
+    position: fixed;
+    z-index: 20;
+    padding: 0 0;
+}
+
+.bannerwrapper, footer, .box {
+    background: linear-gradient(90deg, rgba(240, 19, 77, 0.8) 0%, rgba(255, 151, 138, 0.8) 50%, rgba(240, 19, 77, 0.8) 100%);
+    width: 100vw;
+}
+
+/* footer */
+
+footer {
+    margin-top: 20px;
+    min-height: 100px;
+    padding: 20px 20px;
+    font-style: oblique;
+}
+
+a{
+    color: inherit;
+    font-size: inherit;
+    font: inherit;
+}
+
+/*boxes*/
+.flexwrap{
+    display: flex center;
+}
+
+.box{
+    width: auto;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    min-height: 100px;
+    position: relative;
+    padding: 50px 50px;
+}
+
+.box:nth-child(1n){
+    margin-top: 70px;
+}

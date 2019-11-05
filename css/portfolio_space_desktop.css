@@ -1,0 +1,96 @@
+/*aspects of style for desktop only*/
+
+.fullpagepan {
+    height: 100vh;
+}
+
+/*for small desktop*/
+
+@media screen and (max-width: 1302px) {
+    .navbar ul li {
+        margin-right: 20px;
+        width: auto;
+    }
+    .aPropos img {
+        margin-right: 40px;
+    }
+    .aPropos h1 {
+        font-size: 50px;
+        letter-spacing: 0.1em;
+    }
+    .aPropos {
+        height: auto;
+        min-height: 300px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .parallaxBg, article {
+        height: auto;
+    }
+
+    .square{
+        top: 15%;
+    }
+
+    .boxwrapper {
+        height: 250px;
+        width: 250px;
+        margin: 25px 25px;
+    }
+
+    #portfolio figure{
+        max-width: 95vw;
+    }
+}
+
+/*for big desktop*/
+
+/*stuff for big desktop*/
+
+@media screen and (min-width: 1302px) {
+.square{
+    top: 25%;
+}
+
+    .aPropos h1 {
+        font-size: 70px;
+        line-height: 100px;
+        letter-spacing: 0.1em;
+    }
+    .aPropos {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        height: 60vh;
+        margin-top: 20vh;
+    }
+    .aPropos img {
+        margin-bottom: 100px;
+        margin-left: 200px;
+        margin-right: 100px;
+    }
+    .aPropos p {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        padding-right: 190px;
+        width: 50vw;
+    }
+    .navbar ul li {
+        max-height: 42px;
+        min-height: 42px;
+        width: 15vw;
+    }
+    .gradientrectangle, .parallaxBg, article {
+        height: 100vh;
+    }
+    .boxwrapper {
+        margin: 30px 30px;
+        height: 30vh;
+        width: 20vw;
+    }
+
+    #portfolio figure{
+        max-width: 70vw;
+    }
+}
