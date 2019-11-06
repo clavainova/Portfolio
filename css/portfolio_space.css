@@ -13,7 +13,7 @@ h1, h2 {
     position: relative;
 }
 
-.gradientrectangle, .fullpagepan, .parallaxBg, article {
+.gradientrectangle, .fullpagepan, .parallaxBg, section {
     width: 100vw;
     background-size: cover;
     background-position: 50% 0%;
@@ -30,7 +30,7 @@ a {
 
 /* navbar */
 
-.navbar {
+nav {
     width: 100vw;
     z-index: 40;
     height: 60px;
@@ -39,7 +39,7 @@ a {
     text-align: right;
 }
 
-.navbar ul li {
+nav ul li {
     font-size: 20px;
     text-align: center;
     left: 0;
@@ -48,7 +48,7 @@ a {
     display: inline-block;
 }
 
-.navbar ul li:hover {
+nav ul li:hover {
     transition: ease 1s;
     color: rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.2);

@@ -7,7 +7,7 @@
 /*for small desktop*/
 
 @media screen and (max-width: 1302px) {
-    .navbar ul li {
+    nav ul li {
         margin-right: 20px;
         width: auto;
     }
@@ -26,7 +26,7 @@
         padding-right: 20px;
     }
 
-    .parallaxBg, article {
+    .parallaxBg, section {
         height: auto;
     }
 
@@ -76,12 +76,12 @@
         padding-right: 190px;
         width: 50vw;
     }
-    .navbar ul li {
+    nav ul li {
         max-height: 42px;
         min-height: 42px;
         width: 15vw;
     }
-    .gradientrectangle, .parallaxBg, article {
+    .gradientrectangle, .parallaxBg, section {
         height: 100vh;
     }
     .boxwrapper {
