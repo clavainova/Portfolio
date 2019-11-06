@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+ul {
+    list-style: none;
+}
+
 h1, h2 {
     font-weight: normal;
     position: relative;
@@ -45,15 +49,13 @@ nav ul li {
     text-align: center;
     left: 0;
     padding-top: 18px !important;
-    list-style: none;
     display: inline-block;
 }
 
 nav ul li:hover {
     transition: ease 1s;
-    color: rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.2);
-    border-bottom-color: white;
+    background: rgba(177, 46, 159, 0.2);
+    border-bottom-color: rgb(177, 46, 159);
     border-bottom-width: 3px;
     border-bottom-style: solid;
     /* can use border image and slice to make the bottom border a gradient */
@@ -308,7 +310,7 @@ animation: 40s, 0.5 increments
     background-image: url("../assets/backgrounds/lightning.jpeg");
 }
 
-#exps .parallaxBg h2 {
+#comps h1, #exps .parallaxBg h2 {
     text-shadow: 2px 2px rgb(30, 5, 59);
     column-span: all;
     font-size: 60px;
@@ -325,7 +327,6 @@ animation: 40s, 0.5 increments
     column-gap: 20vw;
     column-rule: 12px solid rgba(255, 255, 255, 0.7);
     position: relative;
-    list-style: none;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -343,7 +344,7 @@ animation: 40s, 0.5 increments
 
 #exps ul li h1 {
     font-size: 50px;
-    color: rgb(125, 33, 148);
+    color: rgb(177, 46, 159);
     text-shadow: 2px 2px rgb(47, 12, 86);
 }
 
@@ -355,11 +356,56 @@ animation: 40s, 0.5 increments
 /*competences*/
 
 #comps .parallaxBg .gradientrectangle {
+    top: 300vh;
     background: linear-gradient(0deg, rgba(103, 32, 173, 0.5) 0%, rgba(38, 52, 173, 0.5) 49%, rgba(164, 33, 164, 0.5) 100%);
 }
 
 #comps .parallaxBg {
     background-image: url("../assets/backgrounds/keyboard.jpeg");
+}
+
+#comps section section {
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+#comps .parallaxBg article {
+    background-color: rgba(0, 0, 0, 0.5);
+    break-inside: avoid;
+    height: auto;
+}
+
+#comps ul {
+    padding: 20px 20px;
+}
+
+#comps li{
+    padding: 5px 5px;
+}
+
+#comps h2 {
+    background-color: rgb(177, 46, 159);
+}
+
+#comps h3 {
+    background-color: rgb(125, 33, 148);
+}
+
+#comps h2, #comps h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#comps h2, #comps h3, #comps .parallaxBg article {
+    box-shadow: 6px 9px 5px -3px rgba(0, 0, 0, 0.41);
+    width: 30vw;
+    min-width: 300px;
+    margin-bottom: 20px;
 }
 
 /*portfolio*/

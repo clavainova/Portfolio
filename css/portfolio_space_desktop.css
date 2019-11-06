@@ -7,6 +7,8 @@
 /*for small desktop*/
 
 @media screen and (max-width: 1300px) {
+
+
     nav ul li {
         margin-right: 20px;
         width: auto;
@@ -27,6 +29,12 @@
         padding-right: 20px;
     }
 
+    /*pas marché maintenant - les boîtes sont coupé*/
+    #comps section section{
+        overflow-y: scroll;
+        height: 400vh;
+    }
+
     .boxwrapper {
         height: 250px;
         width: 250px;
@@ -43,7 +51,6 @@
 /*stuff for big desktop*/
 
 @media screen and (min-width: 1302px) {
-
 
     .aPropos h1 {
         font-size: 70px;
@@ -71,6 +78,10 @@
         max-height: 42px;
         min-height: 42px;
         width: 15vw;
+    }
+
+    #comps section section{
+        max-height: 80vh;
     }
 
     .boxwrapper {
