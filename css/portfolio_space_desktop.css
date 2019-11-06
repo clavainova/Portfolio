@@ -6,7 +6,7 @@
 
 /*for small desktop*/
 
-@media screen and (max-width: 1302px) {
+@media screen and (max-width: 1300px) {
     nav ul li {
         margin-right: 20px;
         width: auto;
@@ -19,19 +19,12 @@
         letter-spacing: 0.1em;
     }
     .aPropos {
-        height: auto;
-        min-height: 300px;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        height: 60vh;
         padding-bottom: 20px;
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    .parallaxBg, section {
-        height: auto;
-    }
-
-    .square{
-        top: 15%;
     }
 
     .boxwrapper {
@@ -50,9 +43,7 @@
 /*stuff for big desktop*/
 
 @media screen and (min-width: 1302px) {
-.square{
-    top: 25%;
-}
+
 
     .aPropos h1 {
         font-size: 70px;
@@ -62,7 +53,7 @@
     .aPropos {
         padding-left: 20vw;
         padding-right: 20vw;
-        height: 60vh;
+        height: auto;
         margin-top: 20vh;
     }
     .aPropos img {
@@ -81,9 +72,7 @@
         min-height: 42px;
         width: 15vw;
     }
-    .gradientrectangle, .parallaxBg, section {
-        height: 100vh;
-    }
+
     .boxwrapper {
         margin: 30px 30px;
         height: 30vh;

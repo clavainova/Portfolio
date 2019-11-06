@@ -18,6 +18,7 @@ h1, h2 {
     background-size: cover;
     background-position: 50% 0%;
     overflow: hidden;
+    object-position: 50% 50%;
 }
 
 body {
@@ -100,6 +101,10 @@ nav ul li:hover {
     animation: rainbow 300s ease infinite;
 }
 
+.gradientrectangle, .parallaxBg, section, .fullpagepan {
+    height: 100vh;
+}
+
 .gradientrectangle {
     position: absolute;
     height: inherit;
@@ -107,18 +112,19 @@ nav ul li:hover {
 
 @keyframes rainbow {
     0% {
-        background-position: 96% 0%
+        background-position: 50% 50%
     }
     50% {
-        background-position: 5% 100%
+        background-position: 0% 0%
     }
     100% {
-        background-position: 96% 0%
+        background-position: 100% 100%
     }
 }
 
 .square {
     position: absolute;
+    top: 25%;
     max-height: 500px;
     max-width: 500px;
     min-height: 500px;
@@ -403,6 +409,7 @@ animation: 40s, 0.5 increments
 
 #portfolio figure {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     perspective: 1000px;
 }

@@ -1,1 +1,35 @@
 /*aspects of style for mobile only*/
+
+nav ul li {
+    margin-right: 20px;
+    width: auto;
+}
+.aPropos img {
+    margin: 5vw 5vh;
+}
+.aPropos h1 {
+    font-size: 100px;
+    letter-spacing: 0.1em;
+}
+.aPropos {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    height: 60vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.aPropos p{
+    font-size: 50px;
+}
+
+.boxwrapper {
+    height: 15vh;
+    width: 30vw;
+    margin: 30px 30px;
+}
+
+#portfolio figure{
+    max-width: 95vw;
+}

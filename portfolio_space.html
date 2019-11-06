@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-<!-- note: phone needs a pop-up window -->
-
+<!-- note: phone needs a pop-up window for menu -->
 
 <head>
     <title>portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans|Rouge+Script&display=swap" rel="stylesheet">
+    <!--styleheet for everything-->
     <link rel="stylesheet" type="text/css" href="css/portfolio_space.css">
-    <link rel="stylesheet" type="text/css" href="css/portfolio_space_desktop.css">
+    <!--styleheet for desktop or mobile is added with script-->
+    <script type="text/javascript" src="portfolio_space.js"></script>
 </head>
 
-<body>
+<body onload="initialize();">
 
     <!-- navbar -->
     <nav>
@@ -35,11 +35,10 @@
         </ul>
     </nav>
 
-
     <!-- acceil -->
     <section id="acceil">
         <aside class="fullpagepan">
-            <img class="gradientrectangle"> 
+            <img class="gradientrectangle">
             <img class="gradientrectangle">
         </aside>
         <article class="centerchild">
@@ -73,7 +72,7 @@
     <section id="apropos">
         <article class="parallaxBg">
             <img class="gradientrectangle">
-            <div class="aPropos">
+            <article class="aPropos">
                 <h1>A propos de moi</h1>
                 <img src="assets/me.jpg" style="transform: rotate(270deg);">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -86,10 +85,11 @@
                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                     mollit
                     anim id est laborum.</p>
-            </div>
+            </article>
         </article>
     </section>
 
+    <!-- experiences et formations -->
     <section id="exps">
         <article class="parallaxBg">
             <img class="gradientrectangle">
@@ -128,6 +128,7 @@
         </article>
     </section>
 
+    <!-- competences -->
     <section id="comps">
         <article class="parallaxBg">
             <img class="gradientrectangle">
@@ -135,43 +136,46 @@
         </article>
     </section>
 
+    <!-- portfolio -->
     <section id=portfolio>
         <article class="parallaxBg">
             <img class="gradientrectangle">
             <h1>Portfolio</h1>
 
-            <div class="centerchild">
+            <article class="centerchild">
                 <br>
                 <figure>
-                    <div class="boxwrapper">
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/reef.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
-                    <div class="boxwrapper">
+                    </span>
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/crystals.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
-                    <div class="boxwrapper">
+                    </span>
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/clouds.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
-                    <div class="boxwrapper">
+                    </span>
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/lights.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
-                    <div class="boxwrapper">
+                    </span>
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/lego.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
-                    <div class="boxwrapper">
+                    </span>
+                    <span class="boxwrapper">
                         <img class="boxfront" src="assets/backgrounds/window.jpeg">
                         <p class="boxback">LOCATE ME</p>
-                    </div>
+                    </span>
                 </figure>
-            </div>
+            </article>
         </article>
     </section>
 
+    <!-- footer with credits for images -->
+    <footer></footer>
 </body>
 
 
