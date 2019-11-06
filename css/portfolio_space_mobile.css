@@ -1,16 +1,39 @@
 /*aspects of style for mobile only*/
 
+
+#comps .parallaxBg article {
+    break-inside: avoid;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#comps .parallaxBg article, #comps h2, #comps h3 {
+    width: 90vw;
+}
+
+#comps .parallaxBg {
+    overflow-y: scroll;
+}
+
+#comps section section{
+    height: 100%;
+    overflow-y: scroll;
+}
+
 nav ul li {
     margin-right: 20px;
     width: auto;
 }
+
 .aPropos img {
     margin: 5vw 5vh;
 }
+
 .aPropos h1 {
     font-size: 100px;
     letter-spacing: 0.1em;
 }
+
 .aPropos {
     margin-top: 20vh;
     margin-bottom: 20vh;
@@ -20,8 +43,8 @@ nav ul li {
     padding-right: 5vw;
 }
 
-.aPropos p{
-    font-size: 50px;
+.aPropos p {
+    font-size: 45px;
 }
 
 .boxwrapper {
@@ -30,6 +53,6 @@ nav ul li {
     margin: 30px 30px;
 }
 
-#portfolio figure{
+#portfolio figure {
     max-width: 95vw;
 }

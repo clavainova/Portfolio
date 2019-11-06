@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+.pink {
+    color: rgb(255, 172, 227);
+    font-style: normal;
+}
+
 ul {
     list-style: none;
 }
@@ -31,6 +36,54 @@ body {
 
 a {
     text-decoration: inherit;
+}
+
+/*popup*/
+
+.popup{
+    display: none;
+    width: 80vw;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.popup div{
+    float:right;
+    position: relative;
+    z-index: 11;
+    font-size: 60px;
+    margin-right: 20px; 
+    margin-top: 5px;
+}
+
+.popup div:hover{
+    cursor: pointer;
+}
+
+.popup h1{
+    width: 80vw;
+    text-align: center;
+    background-color: rgba(65, 4, 61, 0.8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.popup h2{
+    font-size: 40px;
+}
+
+.popup p{
+    font-size: 20px;
+}
+
+.popup h2, .popup p, .popup a{
+    margin-left: 50px;
 }
 
 /* navbar */
@@ -148,7 +201,7 @@ nav ul li:hover {
     z-index: 4;
 }
 
-.square:nth-of-type(reef2) {
+.square:nth-of-type(2) {
     background-color: rgba(255, 17, 77, 0.3);
     animation: rotate 10s linear 0.15s infinite forwards;
     z-index: 3;
@@ -274,7 +327,7 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos h1 {
-    background-image: url("../assets/backgrounds/wallpaper.jpeg");
+    background-image: url("../assets/backgrounds/crack.jpeg");
     /* filter: brightness(200%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -303,11 +356,11 @@ animation: 40s, 0.5 increments
 
 #exps .parallaxBg .gradientrectangle {
     top: 200vh;
-    background: linear-gradient(180deg, rgba(11, 47, 172, 0.5) 0%, rgba(255, 255, 255, 0) 100%), rgba(46, 4, 182, 0.5);
+    background: linear-gradient(180deg, rgba(172, 84, 11, 0.3) 0%, rgba(255, 255, 255, 0) 100%), rgba(165, 0, 96, 0.3);
 }
 
 #exps .parallaxBg {
-    background-image: url("../assets/backgrounds/lightning.jpeg");
+    background-image: url("../assets/backgrounds/sea.jpeg");
 }
 
 #comps h1, #exps .parallaxBg h2 {
@@ -318,21 +371,32 @@ animation: 40s, 0.5 increments
     padding-bottom: 40px;
     margin-bottom: 40px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.15);
     box-shadow: 6px 9px 5px -3px rgba(0, 0, 0, 0.41);
+    background-position: center center;
+    background-blend-mode: darken;
+}
+
+#exps .parallaxBg h2 {
+    background-image: url("../assets/backgrounds/lego.jpeg");
+}
+
+#exps .parallaxBg h2, #exps ul li h1 {
+    color: rgb(255, 190, 69);
+    text-shadow: 2px 2px rgb(77, 8, 8);
 }
 
 #exps ul {
     columns: 2 30vw;
     column-gap: 20vw;
-    column-rule: 12px solid rgba(255, 255, 255, 0.7);
+    column-rule: 12px solid rgba(255, 235, 213, 0.7);
     position: relative;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
 #exps ul li {
-    background-color: rgba(255, 255, 255, 0.7);
+    min-width: 200px;
+    background-color: rgba(255, 235, 213, 0.7);
     box-shadow: 6px 9px 5px -3px rgba(0, 0, 0, 0.41);
     -webkit-column-break-inside: avoid;
     border-radius: 25px;
@@ -342,15 +406,19 @@ animation: 40s, 0.5 increments
     max-width: 30vw;
 }
 
+#exps ul li:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: ease-in 2s;
+}
+
 #exps ul li h1 {
     font-size: 50px;
-    color: rgb(177, 46, 159);
-    text-shadow: 2px 2px rgb(47, 12, 86);
 }
 
 #exps ul li p {
     font-size: 25px;
-    color: rgb(47, 12, 86);
+    color: rgb(86, 12, 34);
 }
 
 /*competences*/
@@ -360,30 +428,32 @@ animation: 40s, 0.5 increments
     background: linear-gradient(0deg, rgba(103, 32, 173, 0.5) 0%, rgba(38, 52, 173, 0.5) 49%, rgba(164, 33, 164, 0.5) 100%);
 }
 
+#comps h1{
+    background-image: url("../assets/backgrounds/lightning.jpeg");
+}
+
 #comps .parallaxBg {
     background-image: url("../assets/backgrounds/keyboard.jpeg");
 }
 
 #comps section section {
     position: relative;
-    justify-content: space-around;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 10vh;
+    text-align: center;
 }
 
 #comps .parallaxBg article {
     background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
     break-inside: avoid;
     height: auto;
 }
 
 #comps ul {
     padding: 20px 20px;
+    text-align: left;
 }
 
-#comps li{
+#comps li {
     padding: 5px 5px;
 }
 
@@ -395,7 +465,7 @@ animation: 40s, 0.5 increments
     background-color: rgb(125, 33, 148);
 }
 
-#comps h2, #comps h3{
+#comps h2, #comps h3 {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
@@ -403,9 +473,6 @@ animation: 40s, 0.5 increments
 
 #comps h2, #comps h3, #comps .parallaxBg article {
     box-shadow: 6px 9px 5px -3px rgba(0, 0, 0, 0.41);
-    width: 30vw;
-    min-width: 300px;
-    margin-bottom: 20px;
 }
 
 /*portfolio*/

@@ -4,11 +4,23 @@
     height: 100vh;
 }
 
+#comps h2, #comps h3, #comps .parallaxBg article {
+    width: 30vw;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+#comps section section {
+    margin-top: 10vh;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 /*for small desktop*/
 
 @media screen and (max-width: 1300px) {
-
-
     nav ul li {
         margin-right: 20px;
         width: auto;
@@ -28,20 +40,15 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-
-    /*pas marché maintenant - les boîtes sont coupé*/
-    #comps section section{
+    #comps .parallaxBg {
         overflow-y: scroll;
-        height: 400vh;
     }
-
     .boxwrapper {
         height: 250px;
         width: 250px;
         margin: 25px 25px;
     }
-
-    #portfolio figure{
+    #portfolio figure {
         max-width: 95vw;
     }
 }
@@ -51,7 +58,6 @@
 /*stuff for big desktop*/
 
 @media screen and (min-width: 1302px) {
-
     .aPropos h1 {
         font-size: 70px;
         line-height: 100px;
@@ -79,18 +85,15 @@
         min-height: 42px;
         width: 15vw;
     }
-
-    #comps section section{
+    #comps section section {
         max-height: 80vh;
     }
-
     .boxwrapper {
         margin: 30px 30px;
         height: 30vh;
         width: 20vw;
     }
-
-    #portfolio figure{
+    #portfolio figure {
         max-width: 70vw;
     }
 }

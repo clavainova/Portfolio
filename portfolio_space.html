@@ -9,10 +9,90 @@
     <!--styleheet for everything-->
     <link rel="stylesheet" type="text/css" href="css/portfolio_space.css">
     <!--styleheet for desktop or mobile is added with script-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/portfolio_space_desktop.css"> -->
     <script type="text/javascript" src="portfolio_space.js"></script>
 </head>
 
 <body onload="initialize();">
+
+    <div class="popup" id="ib">
+        <div onclick="closeBox();">X</div>
+        <h1>Baccalauréat International</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>Tonbridge Grammar School for Girls, Kent, Angleterre</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI 2016</p><br>
+        <h2>Description : </h2><br>
+        <p><em class="pink">Niveau Supérieur :</em><br>
+            Informatique - 6/7<br>
+            L'histoire - 6/7<br>
+            Litterature Anglaise - 6/7<br><br>
+            <em class="pink">Niveau Moyen :</em><br>
+            Allemand - 5/7<br>
+            Mathématiques (moyen, pas études) - 5/7<br>
+            Cinéma - 7/7<br><br>
+            <em class="pink">Les autres :</em><br>
+            Mémoire en l'histoire - A<br>
+            La théorie de la connaissance - B<br>
+            Le programme créativité, action, service - Passé
+        </p><br>
+        <a href="https://ibo.org/fr/">Le site internet de la BI.</a>
+    </div>
+
+    <div class="popup" id="stage">
+        <div onclick="closeBox();">X</div>
+        <h1>TITRE</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>org</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>pas commencé déjà </p><br>
+    </div>
+
+    <div class="popup" id="francais">
+        <div onclick="closeBox();">X</div>
+        <h1>TITRE</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>INSTEPP Oloron 64400</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>J'ai appris le français avec <br>180 heures</p><br>
+    </div>
+
+    <div class="popup" id="assistant">
+        <div onclick="closeBox();">X</div>
+        <h1>Assistant des ventes</h1>
+        <h2>Organisation :</h2>
+        <p>Oxfam, Oxted, Surrey, Angleterre</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>01.09.2015 - 31.01.2015</p><br>
+        <h2>Description : </h2><br>
+        <p>Assister les gens avec ses achats, occuper la caisse. Oxfam est un NGO, donc ce n'etait pas renumeré.<br> 4 heures par semaine pour 3 mois.</p><br>
+    </div>
+
+    <div class="popup" id="tutrice">
+        <div onclick="closeBox();">X</div>
+        <h1>Tutrice d'anglais</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>Autoentrepreneur.fr</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>31.10.2017 - Maintenant</p><br>
+        <h2>Description : </h2><br>
+        <p>J'ai donné des cours d'anglais depuis deux ans. Je trouve des étudiants </p><br>
+    </div>
+
+    <div class="popup" id="web">
+        <div onclick="closeBox();">X</div>
+        <h1>Formation de Developpement Web</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>La Fabrique de Numérique Paloise</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>pas fini déjà </p><br>
+    </div>
 
     <!-- navbar -->
     <nav>
@@ -97,28 +177,28 @@
             <ul>
                 <!-- //first col here 
                 when you click on one of these it flashes up with details and contact info-->
-                <li>
+                <li onclick="showBox('stage');">
                     <h1>2020</h1>
                     <p>Stage de développement web</p>
                 </li>
-                <li>
+                <li onclick="showBox('francais');">
                     <h1>2019</h1>
                     <p>Formation de Français avec INSTEPP (180 heures)</p>
                 </li>
-                <li>
+                <li onclick="showBox('assistant');">
                     <h1>2016</h1>
                     <p>Assistant des ventes (Oxfam, Surrey, Angleterre - 4 heures par semaine pour 3 mois)</p>
                 </li>
                 <!-- second col here -->
-                <li>
+                <li onclick="showBox('web');">
                     <h1>2019 - 2020</h1>
                     <p>Formation de Développement Web avec la Fabrique du Numérique (1176 heures) </p>
                 </li>
-                <li>
+                <li onclick="showBox('tutrice');">
                     <h1>2017 - 2020</h1>
                     <p>Travailler comme tutrice d’anglais (auto-entrepreneur)</p>
                 </li>
-                <li>
+                <li onclick="showBox('ib');">
                     <h1>2016</h1>
                     <p>Baccalauréat International (38/45) en Angleterre (informatique, littérature, histoire, allemand,
                         mathématiques, cinéma)</p>
@@ -152,21 +232,22 @@
                         <li>C++</li>
                     </ul>
                 </article>
+
                 <article>
                     <h2>Misc</h2>
                     <h3>Outils et Libraries</h2>
                         <ul>
-                            <li>Math.js</li>
-                            <li>JQuery</li>
-                            <li>Bootstrap</li>
-                            <li>Node-JS</li>
-                            <li>SCSS</li>
+                            <li><em class="pink">JavaScript :</em> Math.js, JQuery, Bootsrap, Node-JS</li>
+                            <li><em class="pink">CSS :</em> SCSS, LESS</li>
+                            <li><em class="pink">Logiciels :</em> Apache2, Linux, Windows, PHPMyAdmin, Android,
+                                Microsoft Office, Open Office, Figma</li>
+                            <li></li>
                         </ul>
                         <h3>Autres</h3>
                         <ul>
-                            <li>Expériences travailler avec des methodes agiles, en particulier SCRUM.</li>
-                            <li>Apache2, Linux, PHPMyAdmin, Windows, Microsoft Office, OpenOffice, Figma</li>
-                            <li>Expériences travailler dans equippe et toute seule</li>
+                            <li>Expériences travailler avec des methodes <em class="pink">agiles</em>, en particulier
+                                <em class="pink">SCRUM</em>.</li>
+                            <li>Expériences travailler <em class="pink">dans equippe</em> et toute seule</li>
                         </ul>
                 </article>
 
@@ -174,7 +255,7 @@
                     <h2>Linguistiques</h2>
                     <ul>
                         <li>Anglais (natif)</li>
-                        <li>Français (B1) - J'ai habité en France depuis deux ans</li>
+                        <li><em class="pink">Français (B1)</em> - J'ai habité en France depuis deux ans</li>
                         <li>Allemand (B1)</li>
                     </ul>
                 </article>
