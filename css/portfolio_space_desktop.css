@@ -16,21 +16,32 @@
 
 /* for short desktop */
 
-@media screen and (max-height: 1000px) {
-    /* heights doubled - then need an equivalent*/
-    .gradientrectangle, .parallaxBg, section, .fullpagepan {
-        height: 150vh;
-    }
+@media screen and (max-height: 850px) {
     #exps .parallaxBg .gradientrectangle {
-        top: 300vh;
+        top: 1700px;
     }
     #comps .parallaxBg .gradientrectangle {
-        top: 450vh;
+        top: 2550px;
     }
-
     .aPropos {
         padding-bottom: 40px;
         padding-left: 40px;
+    }
+}
+
+/*for all round huge desktop - more margins*/
+
+@media screen and (min-height: 950px) and (min-width: 1495px) {
+    #exps ul{
+        max-height: 70vh;
+    }
+    #exps ul li h1{
+        margin-bottom: 20px;
+    }
+    #exps ul li {
+        margin-bottom: 50px;
+        height: 175px;
+        min-width: 450px;
     }
 }
 
@@ -39,9 +50,10 @@
 /*for small desktop*/
 
 @media screen and (max-width: 1300px) {
-    nav ul li {
+    nav ul li, nav ul li:hover {
         margin-right: 20px;
         width: auto;
+        height: 42.5px;
     }
     .aPropos img {
         margin-right: 40px;
@@ -58,8 +70,11 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    #comps .parallaxBg {
+    #comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
         overflow-y: scroll;
+    }
+    #exps ul li {
+        min-width: 62.5vw;
     }
     .boxwrapper {
         height: 250px;
@@ -98,7 +113,7 @@
         padding-right: 190px;
         width: 50vw;
     }
-    nav ul li {
+    nav ul li, nav ul li:hover {
         max-height: 42px;
         min-height: 42px;
         width: 15vw;
