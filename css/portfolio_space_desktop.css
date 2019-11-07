@@ -1,9 +1,5 @@
 /*aspects of style for desktop only*/
 
-.fullpagepan {
-    height: 100vh;
-}
-
 #comps h2, #comps h3, #comps .parallaxBg article {
     width: 30vw;
     min-width: 300px;
@@ -18,9 +14,31 @@
     flex-wrap: wrap;
 }
 
+/* for short desktop */
+
+@media screen and (max-height: 1000px) {
+    /* heights doubled - then need an equivalent*/
+    .gradientrectangle, .parallaxBg, section, .fullpagepan {
+        height: 150vh;
+    }
+    #exps .parallaxBg .gradientrectangle {
+        top: 300vh;
+    }
+    #comps .parallaxBg .gradientrectangle {
+        top: 450vh;
+    }
+
+    .aPropos {
+        padding-bottom: 40px;
+        padding-left: 40px;
+    }
+}
+
+/* average height desktop by default */
+
 /*for small desktop*/
 
-@media screen and (max-height: 1000px), screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
     nav ul li {
         margin-right: 20px;
         width: auto;

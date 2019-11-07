@@ -156,10 +156,6 @@ nav ul li:hover {
     animation: rainbow 300s ease infinite;
 }
 
-.gradientrectangle, .parallaxBg, section, .fullpagepan {
-    height: 100vh;
-}
-
 .gradientrectangle {
     position: absolute;
     height: inherit;

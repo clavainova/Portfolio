@@ -1,5 +1,7 @@
 /*aspects of style for mobile only*/
-
+*{
+    max-width: 100%;
+}
 
 #comps .parallaxBg article {
     break-inside: avoid;
@@ -55,4 +57,8 @@ nav ul li {
 
 #portfolio figure {
     max-width: 95vw;
+}
+
+.gradientrectangle, .parallaxBg, section, .fullpagepan {
+    height: 100vh;
 }
