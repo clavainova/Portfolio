@@ -90,7 +90,7 @@ a {
     font-size: 20px;
 }
 
-.popup button{
+.popup button {
     margin-top: 30px;
     border-radius: 20px;
     background-color: rgb(177, 46, 159);
@@ -169,7 +169,7 @@ nav ul li:hover {
 
 .fullpagepan .gradientrectangle:nth-of-type(2) {
     /* background: linear-gradient(270deg, rgba(32,50,129,1) 4%, rgba(33,79,113,1) 14%, rgba(32,114,115,1) 23%, rgba(30,61,102,1) 44%, rgba(50,27,121,1) 71%, rgba(84,31,121,1) 87%, rgba(124,29,117,1) 95%);    background-size: 2000% 2000%; */
-    animation: rainbowreverse 300s ease infinite;
+    animation: rainbowreverse 200s ease infinite;
 }
 
 .gradientrectangle {
@@ -348,16 +348,17 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos {
-    display: flex center;
     position: relative;
     background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    max-width: 100vw;
+    background-opacity: max-width: 100vw;
+    padding-bottom: 40px;
+    min-height: 50vh;
 }
 
 .aPropos h1 {
-    background-image: url("../assets/backgrounds/crack.jpeg");
-    /* filter: brightness(200%); */
+    background-image: url("../assets/backgrounds/pastel.jpeg");
+    background-size: cover;
+    text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -368,17 +369,19 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos img {
-    height: 250px;
-    width: 250px;
+    height: 25vh;
+    width: 25vh;
     border-radius: 200px;
     box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.35);
     object-fit: cover;
     float: left;
+    background-color: rgb(0, 0, 0);
 }
 
 .aPropos p {
-    float: center;
     font-size: 22px;
+    break-inside: avoid;
+    padding-bottom: 30px;
 }
 
 /*experiences*/
@@ -389,7 +392,8 @@ animation: 40s, 0.5 increments
 }
 
 #exps .parallaxBg {
-    background-image: url("../assets/backgrounds/sea.jpeg");
+    background-image: url("../assets/backgrounds/test.jpeg");
+    background-position: center center;
 }
 
 #comps h1, #exps .parallaxBg h2 {
@@ -407,7 +411,8 @@ animation: 40s, 0.5 increments
 }
 
 #exps .parallaxBg h2 {
-    background-image: url("../assets/backgrounds/lego.jpeg");
+    background-image: url("../assets/low-poly-polygonal-textures-by-Lumberjacks/2.png");
+    background-blend-mode: darken;
 }
 
 #exps .parallaxBg h2, #exps ul li h1 {
@@ -468,7 +473,7 @@ animation: 40s, 0.5 increments
 }
 
 #comps h1 {
-    background-image: url("../assets/backgrounds/lightning.jpeg");
+    background-image: url("../assets/low-poly-polygonal-textures-by-Lumberjacks/1.png");
 }
 
 #comps .parallaxBg {
@@ -497,11 +502,11 @@ animation: 40s, 0.5 increments
 }
 
 #comps h2 {
-    background-color: rgb(177, 46, 159);
+    background-color: rgb(212, 32, 188);
 }
 
 #comps h3 {
-    background-color: rgb(125, 33, 148);
+    background-color: rgb(125, 32, 212);
 }
 
 #comps h2, #comps h3 {
@@ -517,7 +522,7 @@ animation: 40s, 0.5 increments
 /*portfolio*/
 
 #portfolio .parallaxBg .gradientrectangle {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(47, 0, 148, 0.578125) 0.01%, rgba(255, 255, 255, 0) 100%), rgba(148, 0, 80, 0.5);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(148, 0, 148, 0.578) 0.01%, rgba(255, 255, 255, 0) 100%), rgba(148, 0, 80, 0.5);
 }
 
 @keyframes pan {
@@ -540,8 +545,8 @@ animation: 40s, 0.5 increments
 
 #portfolio .parallaxBg {
     animation: pan 500s infinite linear;
-    background-size: 200% 200%;
-    background-image: url("../assets/low-poly-polygonal-textures-by-Lumberjacks/2.png");
+    background-size: fit;
+    background-image: url("../assets/backgrounds/static.jpeg");
 }
 
 #portfolio h1 {
@@ -605,3 +610,7 @@ animation: 40s, 0.5 increments
     top: 0;
     left: 0;
 }
+
+footer {
+    background-color: black;
+    padding: 5px 5px;
