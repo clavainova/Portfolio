@@ -40,7 +40,7 @@ a {
 
 /*popup*/
 
-.popup{
+.popup {
     display: none;
     width: 80vw;
     height: auto;
@@ -52,20 +52,20 @@ a {
     background-color: rgba(0, 0, 0, 0.95);
 }
 
-.popup div{
-    float:right;
+.popup div {
+    float: right;
     position: relative;
     z-index: 11;
     font-size: 60px;
-    margin-right: 20px; 
+    margin-right: 20px;
     margin-top: 5px;
 }
 
-.popup div:hover{
+.popup div:hover {
     cursor: pointer;
 }
 
-.popup h1{
+.popup h1 {
     width: 80vw;
     text-align: center;
     background-color: rgba(65, 4, 61, 0.8);
@@ -74,15 +74,15 @@ a {
     margin-bottom: 15px;
 }
 
-.popup h2{
+.popup h2 {
     font-size: 40px;
 }
 
-.popup p{
+.popup p {
     font-size: 20px;
 }
 
-.popup h2, .popup p, .popup a{
+.popup h2, .popup p, .popup a {
     margin-left: 50px;
 }
 
@@ -159,6 +159,10 @@ nav ul li:hover {
 .gradientrectangle {
     position: absolute;
     height: inherit;
+}
+
+.gradientrectangle, .parallaxBg, section, .fullpagepan {
+    height: 100vh;
 }
 
 @keyframes rainbow {
@@ -402,7 +406,7 @@ animation: 40s, 0.5 increments
     max-width: 30vw;
 }
 
-#exps ul li:hover{
+#exps ul li:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.9);
     transition: ease-in 2s;
@@ -424,7 +428,7 @@ animation: 40s, 0.5 increments
     background: linear-gradient(0deg, rgba(103, 32, 173, 0.5) 0%, rgba(38, 52, 173, 0.5) 49%, rgba(164, 33, 164, 0.5) 100%);
 }
 
-#comps h1{
+#comps h1 {
     background-image: url("../assets/backgrounds/lightning.jpeg");
 }
 
