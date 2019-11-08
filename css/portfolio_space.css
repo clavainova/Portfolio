@@ -177,9 +177,9 @@ nav ul li:hover {
     height: inherit;
 }
 
-.gradientrectangle, .parallaxBg, section, .fullpagepan {
+.gradientrectangle, .parallaxBg, section, .fullpagepan{
     height: 100vh;
-    min-height: 850px;
+    min-height: 1000px;
 }
 
 @keyframes rainbow {
@@ -356,6 +356,13 @@ animation: 40s, 0.5 increments
     display: flex center;
 }
 
+.aPropos article{
+    display: flex;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+}
+
 .aPropos h1 {
     background-image: url("../assets/backgrounds/pastel.jpeg");
     background-size: cover;
@@ -370,18 +377,20 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos img {
-    height: 25vh;
-    width: 25vh;
-    min-height: 250px;
-    min-width: 250px;
+    margin-right: 50px;
+    height: 250px;
+    width: 250px;
     border-radius: 200px;
     box-shadow: 7px 8px 5px 0px rgba(0, 0, 0, 0.35);
     object-fit: cover;
-    float: left;
     background-color: rgb(0, 0, 0);
 }
 
 .aPropos p {
+    min-width: 200px;
+    max-width: 800px;
+    border-left: 1px white solid;
+    padding-left: 20px;
     font-size: 22px;
     break-inside: avoid;
     padding-bottom: 30px;
@@ -460,6 +469,7 @@ animation: 40s, 0.5 increments
 }
 
 #exps aside {
+    margin-top: 10px;
     text-align: center;
     padding: 20px 20px;
     font-style: oblique;

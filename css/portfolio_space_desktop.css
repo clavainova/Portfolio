@@ -13,6 +13,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.aPropos img{
+    height: 25vh;
+    width: 25vh;
+    min-height: 250px;
+    min-width: 250px;
+}
 
 .aPropos{
     padding-left: 20vw;
@@ -21,12 +27,12 @@
 
 /* for short desktop */
 
-@media screen and (max-height: 850px) {
+@media screen and (max-height: 1000px) {
     #exps .parallaxBg .gradientrectangle {
-        top: 1700px;
+        top: 2000px;
     }
     #comps .parallaxBg .gradientrectangle {
-        top: 2550px;
+        top: 3000px;
     }
     .aPropos {
         padding-bottom: 40px;
@@ -35,7 +41,7 @@
 
 /*for all round huge desktop - more margins*/
 
-@media screen and (min-height: 970px) and (min-width: 1495px) {
+@media screen and (min-height: 1000px) and (min-width: 1495px) {
     #exps ul{
         max-height: 70vh;
     }
@@ -47,9 +53,25 @@
         height: 150px;
         min-width: 450px;
     }
+    #portfolio figure {
+        width: 95vw !important;
+    }
+    #comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
+        overflow-y: scroll;
+    }
 }
 
 /* average height desktop by default */
+
+/*tiny desktop*/
+@media screen and (max-width: 745px) {
+    .aPropos article{
+        display: block;
+    }
+    .aPropos{
+        height: auto !important;
+    }
+}
 
 /*for small desktop*/
 
@@ -59,9 +81,6 @@
         width: auto;
         height: 42.5px;
     }
-    .aPropos img {
-        margin-right: 40px;
-    }
     .aPropos h1 {
         font-size: 50px;
         letter-spacing: 0.1em;
@@ -70,6 +89,8 @@
         margin-top: 20vh;
         margin-bottom: 20vh;
         height: 60vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
         padding-bottom: 20px;
     }
     #comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
@@ -102,15 +123,7 @@
         height: auto;
         margin-top: 20vh;
     }
-    .aPropos img {
-        margin-bottom: 100px;
-        margin-left: 200px;
-        margin-right: 100px;
-    }
     .aPropos p {
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-        padding-right: 190px;
         width: 50vw;
     }
     nav ul li, nav ul li:hover {

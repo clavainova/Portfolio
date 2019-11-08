@@ -29,19 +29,14 @@ nav ul li {
     width: auto;
 }
 
-.aPropos img {
-    margin: 5vw 5vh;
-}
-
 .aPropos h1 {
     font-size: 100px;
     letter-spacing: 0.1em;
 }
 
 .aPropos {
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    height: 60vh;
+    margin-top: 0vh;
+    height: 100vh;
     padding-bottom: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
