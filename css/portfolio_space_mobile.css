@@ -14,14 +14,9 @@
     width: 90vw;
 }
 
-#comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
+#comps .parallaxBg, #comps section section, #aPropos, #exps .parallaxBg, #portfolio .parallaxBg {
     overflow-y: scroll;
     height: 100%;
-}
-
-#comps section section {
-    height: 100%;
-    overflow-y: scroll;
 }
 
 nav ul li {
@@ -54,4 +49,32 @@ nav ul li {
 
 #portfolio figure {
     max-width: 95vw;
+}
+
+@media screen and (orientation:landscape) {
+    .aPropos p {
+        font-size: 35px;
+    }
+    .gradientrectangle, .parallaxBg, section, .fullpagepan {
+        height: 200vh;
+    }
+    #apropos .parallaxBg .gradientrectangle {
+        top: 200vh;
+        height: 200vh;
+    }
+    .aPropos h1 {
+        margin-bottom: 0;
+    }
+    #apropos article {
+        height: 200vh;
+    }
+    #exps .parallaxBg .gradientrectangle {
+        top: 400vh;
+    }
+    #comps .parallaxBg .gradientrectangle {
+        top: 600vh;
+    }
+    .boxwrapper, .boxfront, .boxback {
+        min-height: 200px;
+    }
 }
