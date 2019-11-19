@@ -136,7 +136,12 @@ nav ul li:hover {
     margin-top: 80px !important;
     line-height: 51px;
     font-size: 48px;
-    background: linear-gradient(rgb(169, 150, 255), rgb(237, 215, 255));
+}
+
+.square h1, .square h2{
+    background-image: url("../assets/stars.jpg");
+    background-size: contain;
+    text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -144,9 +149,6 @@ nav ul li:hover {
 .square h2 {
     line-height: 32px;
     font-size: 30px;
-    background: linear-gradient( rgb(194, 201, 255), rgb(223, 192, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .fullpagepan {
@@ -177,7 +179,7 @@ nav ul li:hover {
     height: inherit;
 }
 
-.gradientrectangle, .parallaxBg, section, .fullpagepan{
+.gradientrectangle, .parallaxBg, section, .fullpagepan {
     height: 100vh;
     min-height: 1000px;
 }
@@ -259,7 +261,6 @@ nav ul li:hover {
     animation: rotate 10s linear 0.75s infinite forwards;
     z-index: 3;
 }
-
 /* 
 animation: 40s, 0.5 increments
 @keyframes rotate {
@@ -308,7 +309,7 @@ animation: 40s, 0.5 increments
 }
 
 .icon:hover, .cvbutton:hover {
-    opacity: 0.4;
+    opacity: 0.8;
     filter: drop-shadow(5px 5px 5px black);
     transition: ease 0.5s;
 }
@@ -323,7 +324,8 @@ animation: 40s, 0.5 increments
     margin-top: 10px;
     margin-left: 25%;
     color: white;
-    background: linear-gradient( rgb(223, 192, 255), rgb(255, 165, 172));
+    background-image: url("../assets/stars.jpg");
+    background-size: cover;
     font-size: 30px;
     width: 225px;
     height: 50px;
@@ -349,14 +351,14 @@ animation: 40s, 0.5 increments
 
 .aPropos {
     position: relative;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(112, 90, 90, 0.5);
     max-width: 100vw;
     padding-bottom: 40px;
     min-height: 50vh;
     display: flex center;
 }
 
-.aPropos article{
+.aPropos article {
     display: flex;
     width: 75vw;
     align-items: center;
@@ -364,8 +366,8 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos h1 {
-    background-image: url("../assets/backgrounds/pastel.jpeg");
-    background-size: cover;
+    background-image: url("../assets/ripples.jpg");
+    background-size: contain;
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -628,6 +630,6 @@ footer {
     padding: 5px 5px;
 }
 
-footer > a{
+footer>a {
     text-decoration: underline;
 }
