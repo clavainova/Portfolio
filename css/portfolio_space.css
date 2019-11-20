@@ -54,6 +54,7 @@ a {
     position: fixed;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.95);
+
 }
 
 .popup div {
@@ -80,6 +81,8 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 15px;
+    border-bottom: 10px solid transparent;
+    border-image: url("../assets/ripplesrotate.jpg") 10 round;
 }
 
 .popup h2 {
@@ -124,9 +127,8 @@ nav ul li {
 nav ul li:hover {
     transition: ease 1s;
     background: rgba(177, 46, 159, 0.2);
-    border-bottom-color: rgb(177, 46, 159);
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
+    border-bottom: 5px solid transparent;
+    border-image: url("../assets/ripplesrotate.jpg") 1 round;
     /* can use border image and slice to make the bottom border a gradient */
 }
 
@@ -372,9 +374,9 @@ animation: 40s, 0.5 increments
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-image: url("../assets/ripplesrotate.jpg") 0.5 round;
     margin-bottom: 60px;
 }
 
