@@ -1,0 +1,131 @@
+[
+    "jobs",
+    {
+        "ib": {
+            "name": "Baccalauréat International",
+            "org": "Tonbridge Grammar School for Girls, Kent, Angleterre",
+            "year": "2016",
+            "date": "JOUR MOI 2016",
+            "desc": "<em class='pink'>Niveau Supérieur :</em><br>Informatique - 6/7<br>L'histoire - 6/7<br>Litterature Anglaise - 6/7<br><br><em class='pink'>Niveau Moyen :</em><br>            Allemand - 5/7<br>            Mathématiques (moyen, pas études) - 5/7<br>            Cinéma - 7/7<br><br><em class='pink'>Les autres :</em><br>Mémoire en l'histoire - A<br>La théorie de la connaissance - B<br>Le programme créativité, action, service - Passé",
+            "postdesc": "<br><a href='https://ibo.org/fr/'>Le site internet de la BI.</a><br>",
+            "url": "",
+            "pos": "6"
+        },
+        "stage": {
+            "name": "Stage de développement web",
+            "org": "org",
+            "year": "2020",
+            "date": "JOUR MOI AN",
+            "desc": "pas commencé déjà",
+            "postdesc": "",
+            "url": "",
+            "pos": "1"
+        },
+        "francais": {
+            "name": "Formation de français",
+            "org": "INSTEPP Oloron 64400",
+            "year": "2019",
+            "date": "JOUR MOI AN",
+            "desc": "J'ai appris le français avec <br>180 heures</p>",
+            "postdesc": "",
+            "url": "",
+            "pos": "2"
+        },
+        "assistant": {
+            "name": "Assistant des ventes",
+            "org": "Oxfam, Oxted, Surrey, Angleterre",
+            "year": "2016",
+            "date": "01.09.2015 - 31.01.2015",
+            "desc": "Assister les gens avec ses achats, occuper la caisse. Oxfam est un NGO, donc ce n'etait pas renumeré.<br> 4 heures par semaine pour 3 mois.",
+            "postdesc": "",
+            "url": "",
+            "pos": "3"
+        },
+        "tutrice": {
+            "name": "Tutrice d'anglais",
+            "org": "Autoentrepreneur.fr",
+            "year": "2017-2020",
+            "date": "31.10.2017 - Maintenant",
+            "desc": "J'ai donné des cours d'anglais depuis deux ans. Je trouve des étudiants",
+            "postdesc": "",
+            "url": "",
+            "pos": "5"
+        },
+        "web": {
+            "name": "Formation de developpement web",
+            "org": "La Fabrique de Numérique Paloise",
+            "year": "2019-2020",
+            "date": "JOUR MOI AN",
+            "desc": "pas fini déjà",
+            "postdesc": "",
+            "url": "",
+            "pos": "4"
+        }
+    },
+    "acceil",
+    {
+        "cv": "assets/cv.pdf",
+        "github": "https://github.com/clavainova",
+        "linkedin": "https://www.linkedin.com/in/clavain-ramsden-6689b5194/",
+        "twitter": "https://twitter.com/clavainova",
+        "mail": "mailto:clavainova@gmail.com",
+        "da": "https://www.deviantart.com/decoy-mantis"
+    },
+    "apropos",
+    {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    "competences",
+    {
+        "Langages Informatiques": {
+            "Web": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "SQL",
+                "AJAX"
+            ],
+            "Objet-Orienté": [
+                "Java",
+                "C#",
+                "C++"
+            ]
+        },
+        "Misc": {
+            "Outils et Libraries": [
+                "JavaScript",
+                [
+                    "Math.js",
+                    "JQuery",
+                    "Bootsrap",
+                    "Node-JS"
+                ],
+                "CSS",
+                [
+                    "SCSS",
+                    "LESS"
+                ],
+                "Logiciels",
+                [
+                    "Apache2",
+                    "Linux",
+                    "Windows",
+                    "PHPMyAdmin",
+                    "Android",
+                    "Microsoft Office",
+                    "Open Office",
+                    "Figma"
+                ]
+            ],
+            "Autres": [
+                "Linguistiques", 
+                [
+                    "Anglais (natif)",
+                    "Français (B1)",
+                    "Allemand (B1)"
+                ]
+            ]
+        }
+    }
+]
