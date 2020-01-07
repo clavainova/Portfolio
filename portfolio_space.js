@@ -1,3 +1,14 @@
+$.when($.getJSON("../assets/content.json")).done(function () {
+    
+});
+
+function fetchText() {
+    $.getJSON("../assets/content.json", function (data) {
+
+    });
+}
+
+
 function initialize() {
     let head = document.head;
     let link = document.createElement("link");
@@ -15,15 +26,15 @@ function initialize() {
     }
 }
 
-function showBox(str){
+function showBox(str) {
     closeBox(); //close any boxes that might be open
     console.log("showing box " + str);
-    console.log( document.getElementById(str));
+    console.log(document.getElementById(str));
     document.getElementById(str).style.display = "block";
 }
 
-function closeBox(){
-    for(let i = 0; i<6; i++){ //closes all in case of error
+function closeBox() {
+    for (let i = 0; i < 6; i++) { //closes all
         document.getElementsByClassName("popup")[i].style.display = "none";
     }
 }
