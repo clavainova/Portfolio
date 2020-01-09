@@ -1,0 +1,145 @@
+/*aspects of style for desktop only*/
+
+#comps h2, #comps h3, #comps .parallaxBg article {
+    width: 30vw;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+#comps section section {
+    margin-top: 10vh;
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.aPropos img{
+    height: 25vh;
+    width: 25vh;
+    min-height: 250px;
+    min-width: 250px;
+}
+
+.aPropos{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+/* for short desktop */
+
+@media screen and (max-height: 1000px) {
+    #exps .parallaxBg .gradientrectangle {
+        top: 2000px;
+    }
+    #comps .parallaxBg .gradientrectangle {
+        top: 3000px;
+    }
+    .aPropos {
+        padding-bottom: 40px;
+    }
+}
+
+/*for all round huge desktop - more margins*/
+
+@media screen and (min-height: 1000px) and (min-width: 1495px) {
+    #exps ul{
+        max-height: 70vh;
+    }
+    #exps ul li h1{
+        margin-bottom: 20px;
+    }
+    #exps ul li {
+        margin-bottom: 50px;
+        height: 150px;
+        min-width: 450px;
+    }
+    #portfolio figure {
+        width: 95vw !important;
+    }
+    #comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
+        overflow-y: scroll;
+    }
+}
+
+/* average height desktop by default */
+
+/*tiny desktop*/
+@media screen and (max-width: 745px) {
+    .aPropos article{
+        display: block;
+    }
+    .aPropos{
+        height: auto !important;
+    }
+}
+
+/*for small desktop*/
+
+@media screen and (max-width: 1300px) {
+    nav ul li, nav ul li:hover {
+        margin-right: 20px;
+        width: auto;
+        height: 42.5px;
+    }
+    .aPropos h1 {
+        font-size: 50px;
+        letter-spacing: 0.1em;
+    }
+    .aPropos {
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        height: 60vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 20px;
+    }
+    #comps .parallaxBg, #exps .parallaxBg, #portfolio .parallaxBg {
+        overflow-y: scroll;
+    }
+    #exps ul li {
+        min-width: 62.5vw;
+    }
+    .boxwrapper {
+        height: 250px;
+        width: 250px;
+        margin: 25px 25px;
+    }
+    #portfolio figure {
+        max-width: 95vw;
+    }
+}
+
+/*for big desktop*/
+
+/*stuff for big desktop*/
+
+@media screen and (min-width: 1302px) {
+    .aPropos h1 {
+        font-size: 70px;
+        line-height: 100px;
+        letter-spacing: 0.1em;
+    }
+    .aPropos {
+        height: auto;
+        margin-top: 20vh;
+    }
+    .aPropos p {
+        width: 50vw;
+    }
+    nav ul li, nav ul li:hover {
+        max-height: 42px;
+        min-height: 42px;
+        width: 15vw;
+    }
+    #comps section section {
+        max-height: 80vh;
+    }
+    .boxwrapper {
+        margin: 30px 30px;
+        height: 30vh;
+        width: 20vw;
+    }
+    #portfolio figure {
+        max-width: 90vw;
+    }
+}

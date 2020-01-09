@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<!-- note: phone needs a pop-up window for menu
+exps gets cut off at some resolutions, especially the note at the bottom 
+also portfolio sometimes gets cut off-->
+
+<head>
+    <meta charset="utf-8">
+    <title>portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans|Rouge+Script&display=swap" rel="stylesheet">
+    <!--styleheet for everything-->
+    <link rel="stylesheet" type="text/css" href="css/portfolio_space.css">
+    <!--styleheet for desktop or mobile is added with script-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/portfolio_space_desktop.css"> -->
+</head>
+
+<body onload="initialize();">
+
+    <div class="popup" id="ib">
+        <div onclick="closeBox();">X</div>
+        <h1>Baccalauréat International</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>Tonbridge Grammar School for Girls, Kent, Angleterre</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI 2016</p><br>
+        <h2>Description : </h2><br>
+        <p><em class="pink">Niveau Supérieur :</em><br>
+            Informatique - 6/7<br>
+            L'histoire - 6/7<br>
+            Litterature Anglaise - 6/7<br><br>
+            <em class="pink">Niveau Moyen :</em><br>
+            Allemand - 5/7<br>
+            Mathématiques (moyen, pas études) - 5/7<br>
+            Cinéma - 7/7<br><br>
+            <em class="pink">Les autres :</em><br>
+            Mémoire en l'histoire - A<br>
+            La théorie de la connaissance - B<br>
+            Le programme créativité, action, service - Passé
+        </p><br>
+        <a href="https://ibo.org/fr/">Le site internet de la BI.</a><br>
+        <button>Télécharger Certificat</button>
+    </div>
+
+    <div class="popup" id="stage">
+        <div onclick="closeBox();">X</div>
+        <h1>TITRE</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>org</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>pas commencé déjà </p><br>
+    </div>
+
+    <div class="popup" id="francais">
+        <div onclick="closeBox();">X</div>
+        <h1>TITRE</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>INSTEPP Oloron 64400</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>J'ai appris le français avec <br>180 heures</p><br>
+        <button>Télécharger Certificat</button>
+    </div>
+
+    <div class="popup" id="assistant">
+        <div onclick="closeBox();">X</div>
+        <h1>Assistant des ventes</h1>
+        <h2>Organisation :</h2>
+        <p>Oxfam, Oxted, Surrey, Angleterre</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>01.09.2015 - 31.01.2015</p><br>
+        <h2>Description : </h2><br>
+        <p>Assister les gens avec ses achats, occuper la caisse. Oxfam est un NGO, donc ce n'etait pas renumeré.<br> 4
+            heures par semaine pour 3 mois.</p><br>
+    </div>
+
+    <div class="popup" id="tutrice">
+        <div onclick="closeBox();">X</div>
+        <h1>Tutrice d'anglais</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>Autoentrepreneur.fr</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>31.10.2017 - Maintenant</p><br>
+        <h2>Description : </h2><br>
+        <p>J'ai donné des cours d'anglais depuis deux ans. Je trouve des étudiants </p><br>
+    </div>
+
+    <div class="popup" id="web">
+        <div onclick="closeBox();">X</div>
+        <h1>Formation de Developpement Web</h1>
+        <h2>Organisation de déliverance :</h2>
+        <p>La Fabrique de Numérique Paloise</p><br>
+        <h2>Date de déliverance : </h2>
+        <p>JOUR MOI AN</p><br>
+        <h2>Description : </h2><br>
+        <p>pas fini déjà </p><br>
+        <button>Télécharger Certificat</button>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+        <ul>
+            <li><a href="#acceil">Acceuil</a></li>
+            <li><a href="#apropos">A propos</a></li>
+            <li><a href="#exps">Expériences & Formations</a></li>
+            <li><a href="#comps">Compétences</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- acceil -->
+    <section id="acceil">
+        <aside class="fullpagepan">
+            <div class="gradientrectangle"></div>
+            <div class="gradientrectangle"></div>
+        </aside>
+        <article class="centerchild">
+            <div class="square">
+                <h1>Clavain Ramsden</h1>
+                <h2>Développeuse / Programmatrice<br>
+                    (object-orienté, web)</h2>
+                <a href="assets/cv.pdf" download="cv_clavain_ramsden">
+                    <div class="cvbutton">télécharger cv</div>
+                </a><br>
+                <a href="https://github.com/clavainova"><img class="icon" src="assets/icons/icon_circle_github.png"></a>
+                <a href="https://www.linkedin.com/in/clavain-ramsden-6689b5194/"><img class="icon"
+                        src="assets/icons/icon_circle_linkedin.png"></a>
+                <a href="https://twitter.com/clavainova"><img class="icon"
+                        src="assets/icons/icon_circle_twitter.png"></a><br>
+                <a href="mailto:clavainova@gmail.com"><img class="icon" src="assets/icons/icon_circle_email.png"></a>
+                <a href="https://www.deviantart.com/decoy-mantis"><img class="icon"
+                        src="assets/icons/icon_circle_da.png"></a>
+            </div>
+
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </article>
+    </section>
+
+    <!-- a propos -->
+    <section id="apropos">
+        <article class="parallaxBg">
+            <div class="gradientrectangle"></div>
+            <article class="aPropos">
+                <h1>A propos de moi</h1>
+                <article>
+                    <img src="assets/me.jpg" style="transform: rotate(270deg);">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit
+                        anim id est laborum.</p>
+                </article>
+            </article>
+        </article>
+    </section>
+
+    <!-- experiences et formations -- this part gets cut off at some resolutions  -->
+    <section id="exps">
+        <article class="parallaxBg">
+            <div class="gradientrectangle"></div>
+            <h2>Expériences et Formations</h2>
+            <ul>
+                <!-- //first col here 
+                when you click on one of these it flashes up with details and contact info-->
+                <li onclick="showBox('stage');">
+                    <h1>2020</h1>
+                    <p>Stage de développement web</p>
+                </li>
+                <li onclick="showBox('francais');">
+                    <h1>2019</h1>
+                    <p>Formation de Français avec INSTEPP (180 heures)</p>
+                </li>
+                <li onclick="showBox('assistant');">
+                    <h1>2016</h1>
+                    <p>Assistant des ventes (Oxfam, Surrey, Angleterre - 4 heures par semaine pour 3 mois)</p>
+                </li>
+                <!-- second col here -->
+                <li onclick="showBox('web');">
+                    <h1>2019 - 2020</h1>
+                    <p>Formation de Développement Web avec la Fabrique du Numérique (1176 heures) </p>
+                </li>
+                <li onclick="showBox('tutrice');">
+                    <h1>2017 - 2020</h1>
+                    <p>Travailler comme tutrice d’anglais (auto-entrepreneur)</p>
+                </li>
+                <li onclick="showBox('ib');">
+                    <h1>2016</h1>
+                    <p>Baccalauréat International (38/45) en Angleterre (informatique, littérature, histoire, allemand,
+                        mathématiques, cinéma)</p>
+                </li>
+            </ul>
+            <aside>cliquez sur les boîtes pour plus des informations</aside>
+        </article>
+    </section>
+
+    <!-- competences -->
+    <section id="comps">
+        <section class="parallaxBg">
+            <div class="gradientrectangle"></div>
+            <h1>Compétences</h1>
+            <section>
+                <article>
+                    <h2>Langages Informatiques</h2>
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>AJAX</li>
+                    </ul>
+                    <h3>Objet-Orienté</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Misc</h2>
+                    <h3>Outils et Libraries</h2>
+                        <ul>
+                            <li><em class="pink">JavaScript :</em> Math.js, JQuery, Bootsrap, Node-JS</li>
+                            <li><em class="pink">CSS :</em> SCSS, LESS</li>
+                            <li><em class="pink">Logiciels :</em> Apache2, Linux, Windows, PHPMyAdmin, Android,
+                                Microsoft Office, Open Office, Figma</li>
+                        </ul>
+                        <h3>Autres</h3>
+                        <ul>
+                            <li>Expériences travailler avec des methodes <em class="pink">agiles</em>, en particulier
+                                <em class="pink">SCRUM</em>.</li>
+                            <li>Expériences travailler <em class="pink">dans equippe</em> et toute seule</li>
+                        </ul>
+                </article>
+
+                <article>
+                    <h2>Linguistiques</h2>
+                    <ul>
+                        <li>Anglais (natif)</li>
+                        <li><em class="pink">Français (B1)</em> - J'ai habité en France depuis deux ans</li>
+                        <li>Allemand (B1)</li>
+                    </ul>
+                </article>
+
+            </section>
+        </section>
+    </section>
+
+    <!-- portfolio -->
+    <section id=portfolio>
+        <article class="parallaxBg">
+            <div class="gradientrectangle"></div>
+            <h1>Portfolio</h1>
+
+            <article class="centerchild">
+                <br>
+                <figure>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/reef.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/crystals.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/clouds.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/lights.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/lego.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                    <span class="boxwrapper">
+                        <img class="boxfront" src="assets/backgrounds/window.jpeg">
+                        <p class="boxback">LOCATE ME</p>
+                    </span>
+                </figure>
+            </article>
+        </article>
+    </section>
+
+    <!-- footer with credits for assets -->
+    <footer>© Clavain Ramsden 2019 -->
+        <a href="https://unsplash.com/collections/8886490/portfolio">Images</a> --> <a
+            href="https://www.iconsdb.com/">Icons</a> --> <a
+            href="https://dribbble.com/shots/1669629-FREE-10-low-poly-polygonal-textures">Low poly textures</a> --> <a
+            href="http://thepatternlibrary.com/#ripples">Patterns</a> --> Fonts are Rouge Script and Ropa Sans from
+        Google Fonts</footer>
+        
+    <script src="assets/jquery-3.4.1.js"></script>
+    <script src="portfolio_space.js"></script>
+</body>
+
+
+</html>
