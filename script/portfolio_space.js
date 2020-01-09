@@ -1,7 +1,3 @@
-$.when($.getJSON("../assets/content.json")).done(function () {
-    
-});
-
 function initialize() {
     let head = document.head;
     let link = document.createElement("link");
