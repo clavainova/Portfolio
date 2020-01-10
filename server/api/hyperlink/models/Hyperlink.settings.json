@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "hyperlinks",
+  "info": {
+    "name": "hyperlink",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "jsid": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "portfolio": {
+      "model": "portfolio",
+      "via": "hyperlinks"
+    },
+    "iconurl": {
+      "type": "string"
+    }
+  }
+}

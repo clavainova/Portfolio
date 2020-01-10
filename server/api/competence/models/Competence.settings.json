@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "competences",
+  "info": {
+    "name": "competence",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "group": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "apprenant": {
+      "model": "apprenant",
+      "via": "competences"
+    }
+  }
+}

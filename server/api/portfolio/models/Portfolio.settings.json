@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "portfolios",
+  "info": {
+    "name": "portfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "projectname": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "hyperlinks": {
+      "collection": "hyperlink",
+      "via": "portfolio"
+    },
+    "jobs": {
+      "collection": "job",
+      "via": "portfolio"
+    }
+  }
+}
