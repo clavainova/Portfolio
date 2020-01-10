@@ -1,3 +1,5 @@
+setInterval(hideTimeout, 1000);
+
 function initialize() {
     let head = document.head;
     let link = document.createElement("link");
@@ -27,3 +29,22 @@ function closeBox() {
         document.getElementsByClassName("popup")[i].style.display = "none";
     }
 }
+
+// function hideTimeout() {
+//         if (isOpen()) {
+//             document.addEventListener("click", closeBox);
+//         }
+//         else{
+//             document.removeEventListener("click", closeBox);
+//         }
+// }
+
+// function isOpen(){
+//     let x = false;
+//     for (let i = 0; i < 6; i++) { 
+//         if (document.getElementsByClassName("popup")[i].style.display = "none") {
+//             x = true;;
+//         }
+//     }
+//     return x;
+// }

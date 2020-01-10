@@ -54,7 +54,10 @@ a {
     position: fixed;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.95);
+}
 
+.popup::-webkit-scrollbar {
+    display: none;
 }
 
 .popup div {
@@ -140,7 +143,7 @@ nav ul li:hover {
     font-size: 48px;
 }
 
-.square h1, .square h2{
+.square h1, .square h2 {
     background-image: url("../assets/stars.jpg");
     background-size: contain;
     text-align: center;
@@ -263,6 +266,7 @@ nav ul li:hover {
     animation: rotate 10s linear 0.75s infinite forwards;
     z-index: 3;
 }
+
 /* 
 animation: 40s, 0.5 increments
 @keyframes rotate {
