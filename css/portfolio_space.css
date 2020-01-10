@@ -368,11 +368,8 @@ animation: 40s, 0.5 increments
 }
 
 .aPropos h1 {
-    background-image: url("../assets/ripples.jpg");
-    background-size: contain;
+    color: white;
     text-align: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     text-align: center;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -393,7 +390,8 @@ animation: 40s, 0.5 increments
 .aPropos p {
     min-width: 200px;
     max-width: 800px;
-    border-left: 1px white solid;
+    border-left: 1px solid;
+    border-image: url("../assets/ripplesrotate.jpg") 0.5 round;
     padding-left: 20px;
     font-size: 22px;
     break-inside: avoid;
