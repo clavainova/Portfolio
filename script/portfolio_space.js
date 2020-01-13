@@ -17,8 +17,8 @@ function initialize() {
 
 function showBox(str) {
     closeBox(); //close any boxes that might be open
-    console.log("showing box " + str);
-    console.log(document.getElementById(str));
+    // console.log("showing box " + str);
+    // console.log(document.getElementById(str));
     document.getElementById(str).style.display = "block";
 }
 

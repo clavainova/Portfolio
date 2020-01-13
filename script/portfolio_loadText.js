@@ -29,10 +29,10 @@ prom.then((value) => {
 
 function JSONget(url) {
     return new Promise((resolve, reject) => {
-        let xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
-        xmlhttp.onreadystatechange = () => {
+        let xml = new XMLHttpRequest();
+        xml.open("GET", url, true);
+        xml.send();
+        xml.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 let arr = JSON.parse(this.responseText);
                 // resolves when recieves json, returns data
@@ -110,6 +110,7 @@ function addJobs() {
 }
 
 function addLinks(arr) {
+    //add image etc for each link
     arr.forEach((item) => {
         let img = document.createElement("img");
         img.setAttribute("class", "icon");
