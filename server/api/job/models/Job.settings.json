@@ -17,9 +17,6 @@
     "org": {
       "type": "string"
     },
-    "year": {
-      "type": "integer"
-    },
     "desc": {
       "type": "string"
     },
@@ -34,6 +31,9 @@
       "via": "jobs"
     },
     "boxid": {
+      "type": "string"
+    },
+    "year": {
       "type": "string"
     }
   }

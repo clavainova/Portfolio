@@ -20,6 +20,7 @@ function showBox(str) {
     // console.log("showing box " + str);
     // console.log(document.getElementById(str));
     document.getElementById(str).style.display = "block";
+    dragStart(document.getElementById(str));
 }
 
 function closeBox() {
@@ -28,6 +29,42 @@ function closeBox() {
     }
 }
 
+//drag n drop
+// function dragStart(elem) {
+//     elem.onmousedown = (event) => {
+
+//         let shiftX = event.clientX - elem.getBoundingClientRect().left;
+//         let shiftY = event.clientY - elem.getBoundingClientRect().top;
+
+//         elem.style.position = 'absolute';
+//         elem.style.zIndex = 1000;
+//         document.body.append(elem);
+
+//         moveAt(event.pageX, event.pageY);
+
+//         function moveAt(pageX, pageY) {
+//             elem.style.left = pageX - shiftX + 'px';
+//             elem.style.top = pageY - shiftY + 'px';
+//         }
+
+//         function onMouseMove(event) {
+//             moveAt(event.pageX, event.pageY);
+//         }
+
+//         document.addEventListener('mousemove', onMouseMove);
+
+//         elem.onmouseup = function () {
+//             document.removeEventListener('mousemove', onMouseMove);
+//             elem.onmouseup = null;
+//         };
+
+//         elem.ondragstart = function () {
+//             return false;
+//         };
+//     };
+// }
+
+//close when click not on element
 // function hideTimeout() {
 //         if (isOpen()) {
 //             document.addEventListener("click", closeBox);
