@@ -1,0 +1,196 @@
+[
+    {
+        "id": 1,
+        "projectname": "Portfolio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "competences": [
+            {
+                "title": "Langages Informatiques",
+                "data": [
+                    {
+                        "title": "Web",
+                        "data": [
+                            "HTML",
+                            "CSS",
+                            "JavaScript",
+                            "PHP",
+                            "SQL",
+                            "AJAX"
+                        ]
+                    },
+                    {
+                        "title": "Objet-Orienté",
+                        "data": [
+                            "Java",
+                            "C#",
+                            "C++"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Misc",
+                "data": [
+                    {
+                        "title": "Outils et Libraries",
+                        "data": [
+                            "<em class='pink'>JavaScript :</em> Math.js, JQuery, Bootsrap, Node-JS",
+                            "<em class='pink'>CSS :</em> SCSS, LESS",
+                            "<em class='pink'>Logiciels :</em> Apache2, Linux, Windows, PHPMyAdmin, Android, Microsoft Office, Open Office, Figma"
+                        ]
+                    },
+                    {
+                        "title": "Autres",
+                        "data": [
+                            "Expériences travailler avec des methodes <em class='pink'>agiles</em>, en particulier <em class='pink'>SCRUM</em>",
+                            "Expériences travailler <em class='pink'>dans equippe</em> et toute seule"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Linguistiques",
+                "data": [
+                    "Anglais (natif)",
+                    "Français (B1)",
+                    "Allemand (A2)"
+                ]
+            }
+        ],
+        "created_at": 1578576592100,
+        "updated_at": 1578910091711,
+        "hyperlinks": [
+            {
+                "id": 2,
+                "jsid": "github",
+                "url": "https://github.com/clavainova",
+                "portfolio": 1,
+                "iconurl": "assets/icons/icon_circle_github.png",
+                "created_at": 1578576516983,
+                "updated_at": 1578910091715
+            },
+            {
+                "id": 3,
+                "jsid": "linkedin",
+                "url": "https://www.linkedin.com/in/clavain-ramsden-6689b5194/",
+                "portfolio": 1,
+                "iconurl": "assets/icons/icon_circle_linkedin.png",
+                "created_at": 1578576527573,
+                "updated_at": 1578910091715
+            },
+            {
+                "id": 4,
+                "jsid": "twitter",
+                "url": "https://twitter.com/clavainova",
+                "portfolio": 1,
+                "iconurl": "assets/icons/icon_circle_twitter.png",
+                "created_at": 1578576539270,
+                "updated_at": 1578910091715
+            },
+            {
+                "id": 5,
+                "jsid": "mail",
+                "url": "mailto:clavainova@gmail.com",
+                "portfolio": 1,
+                "iconurl": "assets/icons/icon_circle_email.png",
+                "created_at": 1578576548834,
+                "updated_at": 1578910091715
+            },
+            {
+                "id": 6,
+                "jsid": "da",
+                "url": "https://www.deviantart.com/decoy-mantis",
+                "portfolio": 1,
+                "iconurl": "assets/icons/icon_circle_da.png",
+                "created_at": 1578576559043,
+                "updated_at": 1578910091715
+            }
+        ],
+        "jobs": [
+            {
+                "id": 1,
+                "name": "Baccalauréat International",
+                "org": "Tonbridge Grammar School for Girls, Kent, Angleterre",
+                "year": 2016,
+                "desc": "<em class='pink'>Niveau Supérieur :</em><br>Informatique - 6/7<br>L'histoire - 6/7<br>Litterature Anglaise - 6/7<br><br><em class='pink'>Niveau Moyen :</em><br>            Allemand - 5/7<br>            Mathématiques (moyen, pas études) - 5/7<br>            Cinéma - 7/7<br><br><em class='pink'>Les autres :</em><br>Mémoire en l'histoire - A<br>La théorie de la connaissance - B<br>Le programme créativité, action, service - Passé",
+                "postdesc": "<br><a href='https://ibo.org/fr/'>Le site internet de la BI.</a><br>",
+                "url": null,
+                "position": 6,
+                "portfolio": 1,
+                "boxid": "ib",
+                "created_at": 1578577364334,
+                "updated_at": 1578910091719
+            },
+            {
+                "id": 2,
+                "name": "Stage de développement web",
+                "org": null,
+                "year": 2020,
+                "desc": null,
+                "postdesc": null,
+                "url": null,
+                "position": 1,
+                "portfolio": 1,
+                "boxid": "stage",
+                "created_at": 1578577391924,
+                "updated_at": 1578910091719
+            },
+            {
+                "id": 3,
+                "name": "Formation de français",
+                "org": "INSTEPP Oloron 64400",
+                "year": 2019,
+                "desc": "J'ai appris le français avec <br>180 heures",
+                "postdesc": null,
+                "url": null,
+                "position": 2,
+                "portfolio": 1,
+                "boxid": "francais",
+                "created_at": 1578577439140,
+                "updated_at": 1578910091719
+            },
+            {
+                "id": 4,
+                "name": "Assistant des ventes",
+                "org": "Oxfam, Oxted, Surrey, Angleterre",
+                "year": 2016,
+                "desc": "Assister les gens avec ses achats, occuper la caisse. Oxfam est un NGO, donc ce n'etait pas renumeré.<br> 4 heures par semaine pour 3 mois.",
+                "postdesc": null,
+                "url": null,
+                "position": 3,
+                "portfolio": 1,
+                "boxid": "assistant",
+                "created_at": 1578577517468,
+                "updated_at": 1578910091719
+            },
+            {
+                "id": 5,
+                "name": "Tutrice d'anglais",
+                "org": "Autoentrepreneur.fr",
+                "year": 2017,
+                "desc": "J'ai donné des cours d'anglais depuis deux ans. Je trouve des étudiants",
+                "postdesc": null,
+                "url": null,
+                "position": 5,
+                "portfolio": 1,
+                "boxid": "tutrice",
+                "created_at": 1578577560231,
+                "updated_at": 1578910091719
+            },
+            {
+                "id": 6,
+                "name": "Formation de développement web",
+                "org": "La Fabrique de Numérique Paloise",
+                "year": 2019,
+                "desc": "pas fini déjà",
+                "postdesc": null,
+                "url": null,
+                "position": 4,
+                "portfolio": 1,
+                "boxid": "web",
+                "created_at": 1578577591375,
+                "updated_at": 1578910091719
+            }
+        ]
+    }
+]

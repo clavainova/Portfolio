@@ -2,75 +2,37 @@ import { Job } from "./job.js";
 
 JSONget();
 var jobList = []; //jobs
+var prom;
 
-let prom = JSONget("http://localhost:1337/portfolios");
+try {
+    prom = JSONget("http://localhost:1337/portfolios");
+} catch (e) { //this is not working
+    console.log("error with server, loaded backup JSON -- text may be out of date");
+    prom = JSONget("assets/backup.json");
+}
+
 //get JSON then create objects 
 prom.then((value) => {
-    //description - no oo required
+    //description  -- direct
     let text = document.createTextNode(value[0].description);
     document.getElementById("description").appendChild(text);
-    //links - also no oo required
-    value[0].hyperlinks.forEach((item) => {
-        let img = document.createElement("img");
-        img.setAttribute("class", "icon");
-        img.setAttribute("src", item.iconurl);
-        let a = document.createElement("a");
-        a.setAttribute("href", item.url);
-        a.appendChild(img);
-        document.getElementById("hyperlinktarget").appendChild(a);
-        if (item.id == "4") { //so there's a line break after first 3 - looks better
-            let br = document.createElement("br");
-            document.getElementById("hyperlinktarget").appendChild(br);
-        }
-    });
-    //jobs
+    //links -- direct
+    addLinks(value[0].hyperlinks);
+    //jobs -- add to array
     value[0].jobs.forEach((item) => {
         let newJob = new Job(item.name, item.org, item.year, item.desc, item.boxid, item.position);
         jobList.push(newJob);
     });
-    //competences
-    var ulParent = document.createElement("ul");
-    value[0].competences.forEach((item) => {
-        console.log("each iteration: ");
-        console.log(item);
-        var article = document.createElement("article");
-        let h2 = document.createElement("h2");
-        let text = document.createTextNode(item.title);
-        article.appendChild(h2);
-        h2.appendChild(text);
-        console.log(item);
-        item.data.forEach((value) => {
-            if (value.title != null) { //if has subsections
-                let h3 = document.createElement("h3");
-                text = document.createTextNode(value.title);
-                h3.appendChild(text);
-                article.appendChild(h3);
-                var ul = document.createElement("ul");
-                value.data.forEach((item) => {
-                    let li = document.createElement("li");
-                    li.innerHTML = item;
-                    ul.appendChild(li);
-                });
-                article.appendChild(ul);
-            } else { //if no subsections
-                console.log("no subsections");
-                let li = document.createElement("li");
-                li.innerHTML = value;
-                ulParent.appendChild(li);
-            }
-        });
-        article.appendChild(ulParent);
-        document.getElementById("comptarget").appendChild(article);
-    });
-    //then manipulate DOM and do other stuff
-}).then(addToDOM);
+    //competences  -- direct
+    addCompetences(value[0].competences);
+}).then(addJobs);//then add jobs (after added to array of objects)
 
 function JSONget(url) {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
         let xmlhttp = new XMLHttpRequest();
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
-        xmlhttp.onreadystatechange = function () {
+        xmlhttp.onreadystatechange = () => {
             if (this.readyState == 4 && this.status == 200) {
                 let arr = JSON.parse(this.responseText);
                 // resolves when recieves json, returns data
@@ -79,13 +41,17 @@ function JSONget(url) {
                 console.log("-------------------------");
                 resolve(arr);
             }
+            // console.log("error with server, loaded backup JSON -- text may be out of date");
+            // xml.onreject(){}
+            // JSONget("assets/backup.json");
+            // want to do recursion but it messes up the return value
         }
     });
 }
 
-function addToDOM() {
+function addJobs() {
     //metiers
-    bubbleSort(jobList);
+    bubbleSort(jobList); //sort the dates into chronological order
     jobList.forEach((item) => {
         //add to exps and comps section
         let li = document.createElement("li");
@@ -143,7 +109,60 @@ function addToDOM() {
     });
 }
 
-function bubbleSort(arr) {
+function addLinks(arr) {
+    arr.forEach((item) => {
+        let img = document.createElement("img");
+        img.setAttribute("class", "icon");
+        img.setAttribute("src", item.iconurl);
+        let a = document.createElement("a");
+        a.setAttribute("href", item.url);
+        a.appendChild(img);
+        document.getElementById("hyperlinktarget").appendChild(a);
+        if (item.id == "4") { //so there's a line break after first 3 - looks better
+            let br = document.createElement("br");
+            document.getElementById("hyperlinktarget").appendChild(br);
+        }
+    });
+}
+
+function addCompetences(arr) {
+    var ulParent = document.createElement("ul");
+    arr.forEach((item) => {
+        //make an article and header for ecah section
+        var article = document.createElement("article");
+        let h2 = document.createElement("h2");
+        let text = document.createTextNode(item.title);
+        article.appendChild(h2);
+        h2.appendChild(text);
+        //go onto subsections
+        item.data.forEach((value) => {
+            if (value.title != null) { //if has subsections
+                //needs header, li for each subsection
+                let h3 = document.createElement("h3");
+                text = document.createTextNode(value.title);
+                h3.appendChild(text);
+                article.appendChild(h3);
+                var ul = document.createElement("ul");
+                value.data.forEach((item) => {
+                    let li = document.createElement("li");
+                    li.innerHTML = item;
+                    ul.appendChild(li);
+                });
+                article.appendChild(ul);
+            } else { //if no subsections
+                //only needs li, no header
+                let li = document.createElement("li");
+                li.innerHTML = value;
+                ulParent.appendChild(li);
+            }
+        });
+        article.appendChild(ulParent); //add the parent ul to the article
+        //(for ones with no subsection)
+        document.getElementById("comptarget").appendChild(article);
+    });
+}
+
+function bubbleSort(arr) { //so the dates are chronological in the timeline
     let length = arr.length;
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < (length - i - 1); j++) {
@@ -155,6 +174,6 @@ function bubbleSort(arr) {
         }
     }
     for (let i = 0; i < length; i++) {
-        console.log("sorted array: " + arr[i].position);
+        // console.log("sorted array: " + arr[i].position);
     }
 }
