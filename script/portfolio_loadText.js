@@ -5,12 +5,12 @@ var jobList = []; //jobs
 
 let prom = JSONget("http://localhost:1337/portfolios");
 //get JSON then create objects 
-prom.then(function (value) {
+prom.then((value) => {
     //description - no oo required
     let text = document.createTextNode(value[0].description);
     document.getElementById("description").appendChild(text);
     //links - also no oo required
-    value[0].hyperlinks.forEach(function (item) {
+    value[0].hyperlinks.forEach((item) => {
         let img = document.createElement("img");
         img.setAttribute("class", "icon");
         img.setAttribute("src", item.iconurl);
@@ -24,9 +24,43 @@ prom.then(function (value) {
         }
     });
     //jobs
-    value[0].jobs.forEach(function (item) {
+    value[0].jobs.forEach((item) => {
         let newJob = new Job(item.name, item.org, item.year, item.desc, item.boxid, item.position);
         jobList.push(newJob);
+    });
+    //competences
+    var ulParent = document.createElement("ul");
+    value[0].competences.forEach((item) => {
+        console.log("each iteration: ");
+        console.log(item);
+        var article = document.createElement("article");
+        let h2 = document.createElement("h2");
+        let text = document.createTextNode(item.title);
+        article.appendChild(h2);
+        h2.appendChild(text);
+        console.log(item);
+        item.data.forEach((value) => {
+            if (value.title != null) { //if has subsections
+                let h3 = document.createElement("h3");
+                text = document.createTextNode(value.title);
+                h3.appendChild(text);
+                article.appendChild(h3);
+                var ul = document.createElement("ul");
+                value.data.forEach((item) => {
+                    let li = document.createElement("li");
+                    li.innerHTML = item;
+                    ul.appendChild(li);
+                });
+                article.appendChild(ul);
+            } else { //if no subsections
+                console.log("no subsections");
+                let li = document.createElement("li");
+                li.innerHTML = value;
+                ulParent.appendChild(li);
+            }
+        });
+        article.appendChild(ulParent);
+        document.getElementById("comptarget").appendChild(article);
     });
     //then manipulate DOM and do other stuff
 }).then(addToDOM);
@@ -105,10 +139,6 @@ function addToDOM() {
         let desc = document.createElement("p");
         desc.innerHTML = item.desc;
         popup.appendChild(desc);
-        let button = document.createElement("button");
-        text  = document.createTextNode("Télécharger Certificat");
-        button.appendChild(text);
-        popup.appendChild(button);
         document.getElementById("body").appendChild(popup);
     });
 }
@@ -118,9 +148,9 @@ function bubbleSort(arr) {
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < (length - i - 1); j++) {
             if (arr[j].position > arr[j + 1].position) {
-                let tmp = arr[j];  //Temporary variable to hold the current number
-                arr[j] = arr[j + 1]; //Replace current number with adjacent number
-                arr[j + 1] = tmp; //Replace adjacent number with current number
+                let tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
             }
         }
     }

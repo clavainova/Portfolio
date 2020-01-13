@@ -24,6 +24,9 @@
     "jobs": {
       "collection": "job",
       "via": "portfolio"
+    },
+    "competences": {
+      "type": "json"
     }
   }
 }

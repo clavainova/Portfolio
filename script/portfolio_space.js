@@ -1,5 +1,3 @@
-setInterval(hideTimeout, 1000);
-
 function initialize() {
     let head = document.head;
     let link = document.createElement("link");

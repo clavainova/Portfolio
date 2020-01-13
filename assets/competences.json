@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Langages Informatiques",
+        "data": [
+            {
+                "title": "Web",
+                "data": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "PHP",
+                    "SQL",
+                    "AJAX"
+                ]
+            },
+            {
+                "title": "Objet-Orienté",
+                "data": [
+                    "Java",
+                    "C#",
+                    "C++"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Misc",
+        "data": [
+            {
+                "title": "Outils et Libraries",
+                "data": [
+                    "<em class='pink'>JavaScript :</em> Math.js, JQuery, Bootsrap, Node-JS",
+                    "<em class='pink'>CSS :</em> SCSS, LESS",
+                    "<em class='pink'>Logiciels :</em> Apache2, Linux, Windows, PHPMyAdmin, Android, Microsoft Office, Open Office, Figma"
+                ]
+            },
+            {
+                "title": "Autres",
+                "data": [
+                    "Expériences travailler avec des methodes <em class='pink'>agiles</em>, en particulier <em class='pink'>SCRUM</em>",
+                    "Expériences travailler <em class='pink'>dans equippe</em> et toute seule"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Linguistiques",
+        "data": [
+            "Anglais (natif)",
+            "Français (B1)",
+            "Allemand (A2)"
+        ]
+    }
+]

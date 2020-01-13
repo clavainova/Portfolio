@@ -27,10 +27,6 @@
     },
     "Github": {
       "type": "string"
-    },
-    "competences": {
-      "collection": "competence",
-      "via": "apprenant"
     }
   }
 }
